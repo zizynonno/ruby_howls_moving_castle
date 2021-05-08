@@ -1,0 +1,18 @@
+<h2>複数行のテキストをpやbr要素で置き換えたい(simple_format)</h2>
+<%
+article = <<EOS
+  アイウエオアオアシラ
+
+  こんにちは
+  おしっこ和尚です。
+EOS
+%>
+<%= simple_format(article, class: :article) %>
+
+<h3>メリット</h3>
+<h3>転用</h3>
+メールの文面やLINEのメッセージをWeb上で表示したいときに使用するとよさげ
+<h3>文献</h3>
+RailsAP p137
+
+<hr>
