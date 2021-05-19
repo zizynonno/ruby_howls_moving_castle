@@ -15,4 +15,10 @@
 - Everyday Rails - RSpec による Rails テスト入門
 - メタプログラミング
 - 業務中のソースコードの参考になる表現
+- よく使われる gem を一通り触ってみる
+
 - GitHub 実践入門
+- JavaScript ES6
+- CSS 設計の教科書
+- 達人に学ぶ DB 設計 徹底指南書
+- vue.js
