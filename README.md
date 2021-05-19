@@ -10,12 +10,17 @@
 
 ## 非機能用件
 
+### Rails
+
 - オブジェクト指向設計ガイド
 - Ruby on Rails アプリケーションプログラミング
 - Everyday Rails - RSpec による Rails テスト入門
 - メタプログラミング
 - 業務中のソースコードの参考になる表現
 - よく使われる gem を一通り触ってみる
+- RailsGuide の Rails セキュリティガイド
+
+### フロントエンド、DB、バージョン管理
 
 - GitHub 実践入門
 - JavaScript ES6
