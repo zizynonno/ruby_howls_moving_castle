@@ -37,6 +37,20 @@ RailsAP p139
 
 <hr>
 
+<h2>文字列の中から特定の部分を抜粋して表示したい(excerpt)</h2>
+<% excerpt_msg = "皆さんこんにちは。今日はいい天気ですね。燦燦と光り輝く太陽とピーピー鳴いている小鳥のせせらぎが聞こえ、キンキンに冷えた水が喉を潤し、人々は笑顔で暮らしています。" %>
+<p style="font-weight: bold;">原文</p>
+<%= excerpt_msg %>
+<p style="font-weight: bold;">excerptで抜粋した文字</p>
+<%= excerpt(excerpt_msg, '小鳥', radius: 10) %>
+<%= excerpt(excerpt_msg, '小鳥', radius: 10, omission: "***") %>
+
+<h3>メリット</h3>
+<h3>転用</h3>
+<h3>文献</h3>
+
+<hr>
+
 <h2>したい()</h2>
 <h3>メリット</h3>
 <h3>転用</h3>
