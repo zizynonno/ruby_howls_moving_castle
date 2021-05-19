@@ -51,10 +51,21 @@ RailsAP p139
 
 <hr>
 
-<h2>したい()</h2>
+<h2>テーブルやリストの背景色をn行おきに変更したい(cycle)</h2>
+<% numbers = [1,2,3,4,5,6,7,8,9,10] %>
+<% numbers.each do |number| %>
+  <tr style="background-color: <%= cycle('#FFffFF', '#FFff99')%>">
+    <td><%= number %></td>
+    <td>aaaa</td>
+  </tr>
+<% end %>
+
 <h3>メリット</h3>
+クライアントサイトの可読性
 <h3>転用</h3>
+bootstarpを使わずに表を見やすくしたい場合に手取り早い
 <h3>文献</h3>
+RailsAP p142
 
 <hr>
 
