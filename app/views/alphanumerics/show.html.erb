@@ -111,7 +111,7 @@ RailsAP p144
 <%= sprintf('%.10s：全店舗%d件の月総売上%.1f千円、店舗平均は%10.3f千円です。', @name, @shop, @sum, @sum / @shop) %>
 
 <h3>メリット</h3>
-変数の加工をviewの文字列に委任することができる(わざわざ変数を加工する為だけに冗長な書き方をする必要がなくなる)
+変数の加工をviewの文字列に委任することができる(わざわざ変数を加工する為だけに、controllerとかで冗長な書き方をする必要がなくなる)
 
 <h3>転用</h3>
 日付とかに使えそう
@@ -121,11 +121,27 @@ RailsAP p148
 
 <hr>
 
-<h2>したい()</h2>
-<h3>メリット</h3>
-<h3>転用</h3>
-<h3>文献</h3>
+<h2>数値を様々な形式で加工したい(number_xxxxx)</h2>
+<%= number_to_currency(12345) %><br />
+<%= number_to_currency(12345, unit: '円', precision: 0, format: '%n%u') %><br />
+<%= number_to_human(1234567) %><br />
+<%= number_to_human(1234567, units: { unit: "", million: "百万" }) %><br />
+<%= number_to_human_size(123456) %><br />
+<%= number_to_percentage(12.3456) %><br />
+<%= number_with_delimiter(1234567.89, delimiter: " ", separator: ",") %> <br />
+<%= number_with_precision(123.4567) %><br />
+<%= number_with_precision(123.4567, precision: 5) %><br />
+<%= number_with_precision(123.4567, precision: 5, significant: true) %><br />
+<%= number_with_precision(123.4, precision: 5, strip_insignificant_zeros: true) %>
 
+<h3>メリット</h3>
+変数の加工をviewの文字列に委任することができる(わざわざ変数を加工する為だけに、controllerとかで冗長な書き方をする必要がなくなる)
+
+<h3>転用</h3>
+データを表一覧で表示したい時に使える
+
+<h3>文献</h3>
+RailsAP p150
 
 <hr>
 
