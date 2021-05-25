@@ -1,16 +1,27 @@
-<h2>したい()</h2>
+<h2>ハイパーリンクを生成したい(link_to)</h2>
+<%= link_to "Qiita", "https://qiita.com/", data: { confirm: "外部ページに飛んでいいですか？"} %>
+<%= link_to "トップページ", root_path %>
 <h3>メリット</h3>
+link_toはリンク押下時に、確認ダイアログ、削除、ajaxでのリンク処理などができる
 <h3>転用</h3>
+上記コミュニケーションをユーザーと取れる
 <h3>文献</h3>
+RailsAP p155
 
 <hr>
-<h2>したい()</h2>
+<h2>ルート定義から動的にURLを作成したい(url_for)</h2>
+<%= url_for(action: :edit)%>
 <h3>メリット</h3>
+よくわかってない。
 <h3>転用</h3>
 <h3>文献</h3>
+RailsAP p156
 
 <hr>
-<h2>したい()</h2>
+<h2>条件に応じてリンクを生成したい(link_to_if)</h2>
+<% @sex = "mam" %>
+<%= link_to_if @sex.nil?, "ログイン", link_path %>
+
 <h3>メリット</h3>
 <h3>転用</h3>
 <h3>文献</h3>
