@@ -3,8 +3,16 @@ class BooksController < ApplicationController
 
   # GET /books or /books.json
   def index
-    @books = Book.all
+    # @books = Book.all
     # @books = Book.find([2,5,10])
+    # @books = Book.where(publish: '技術評論社')
+    # @books = Book.where.not(isbn: "978-4-7741-8411-1")
+    # @books = Book.where(publish: '技術評論社').or(Book.where('price > 2000'))
+    # @books = Book.where(publish: '技術評論社').order(published: :desc)
+    # @books = Book.order(:published).order(:price)
+    # @books = Book.order(:published).reorder(:price)
+    # @books = Book.where('price >= 2000').select(:title, :price)
+    # @books = Book.select(:publish).distinct.order(:publish)
   end
 
   # GET /books/1 or /books/1.json
